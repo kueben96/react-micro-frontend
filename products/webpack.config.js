@@ -15,7 +15,7 @@ module.exports = {
             filename: 'remoteEntry.js',
             exposes: {
                 // aliases filenames (rename for import from container)
-                './ProductsIndex': './src/index'
+                './ProductsIndex': './src/bootstrap'
             },
             shared: ['faker'],
         }),
