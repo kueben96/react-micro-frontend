@@ -16,7 +16,8 @@ module.exports = {
             exposes: {
                 // aliases filenames (rename for import from container)
                 './ProductsIndex': './src/index'
-            }
+            },
+            shared: ['faker'],
         }),
         new HtmlWebpackPlugin({
             template: './public/index.html',
