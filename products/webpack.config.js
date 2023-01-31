@@ -9,9 +9,12 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
+            // name has to match the url string
             name: 'products',
+            // always call it remoteEntry.js
             filename: 'remoteEntry.js',
             exposes: {
+                // aliases filenames (rename for import from container)
                 './ProductsIndex': './src/index'
             }
         }),
