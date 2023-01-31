@@ -41,6 +41,11 @@ This is an example of how to list things you need to use the software and how to
 7. In the Host, import whatever files you need from the remote
 
 ### ModuleFederationPlugin 
+#### for products
 - remoteEntry.js; Contains a list of files that are available from this project + directions on how to load them 
 - src_index.js: Version of src/index.js that can be safely loaded into the browser
 - faker.js: Version of faker that can be safely loaded into the browser
+
+#### for container
+- index.js: allow webpack to get some additional javaScript code
+- 
