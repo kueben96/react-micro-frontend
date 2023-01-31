@@ -14,7 +14,9 @@ module.exports = {
             remotes: {
                 // load the file at the listed URL if anything in Container has an import like; import abc from 'products'
                 // 'name(related to name in products webpack config)@url(for remoteEntry file)
-                products: 'products@http://localhost:8081/remoteEntry.js'
+                products: 'products@http://localhost:8081/remoteEntry.js',
+                cart: 'cart@http://localhost:8082/remoteEntry.js'
+
             },
         }),
         new HtmlWebpackPlugin({
