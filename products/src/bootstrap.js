@@ -2,7 +2,7 @@ import faker from 'faker';
 
 // element = html element
 // function can be called in situation #1 and #2
-const mount = (element) => {
+const mountProducts = (element) => {
     let products = '';
 
     for (let i = 0; i < 5; i++) {
@@ -25,7 +25,7 @@ if (process.env.NODE_ENV == 'development') {
     const el = document.querySelector('#dev-products');
     // Assuming out container doesnt have an element with id 'dev-products'
     if (el) {
-        mount(el);
+        mountProducts(el);
     }
 }
 
@@ -35,4 +35,4 @@ if (process.env.NODE_ENV == 'development') {
 // NO GUARANTEE that an element with an id of 'dev-products' exists
 // WE DO NOT WANT try to immediately render the app
 
-export { mount };
+export { mountProducts };
